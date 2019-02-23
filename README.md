@@ -1,2 +1,2 @@
 # Tickybott-Clone
-Chingu Solo Project
+Chingu solo project for voyage #8
