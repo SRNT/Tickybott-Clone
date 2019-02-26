@@ -1,11 +1,10 @@
 * {
-  /* border: 1px black solid; */
   margin: 0;
   padding: 0;
 }
 
 .container {
-  padding: 0 100px;
+  padding: 0 50px;
   max-width: 1200px;
   font-size: 1.25em;
 }
@@ -83,4 +82,56 @@
 .slogen {
   font-size: 1.3em;
   color: white;
+}
+
+/* -------------- ABOUT -------------- */
+.page-about {
+  background-color: #fafafa;
+  padding: 50px 0;
+  color: #000000bf;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: normal;
+}
+
+.about-hr {
+  width: 190px;
+  border: 1.5px #55c0ec solid;
+  margin: -2px auto 30px auto;
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.description-left {
+  box-flex: 1;
+  flex: 1 0 calc(50% - 2rem);
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: calc(50% - 2rem);
+  /* border: 1px black solid; */
+}
+
+.description-right {
+  box-flex: 1;
+  flex: 1 0 calc(50% - 2rem);
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: calc(50% - 2rem);
+
+  /* border: 1px black solid; */
+}
+
+.description-full {
+  margin: 40px 0 20px 0;
+  flex: 0 1 calc(120% - 2em);
+  flex-grow: 0;
+  flex-shrink: 1;
 }
