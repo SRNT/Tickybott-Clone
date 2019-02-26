@@ -10,7 +10,31 @@
   font-size: 1.25em;
 }
 
-/* HEADER */
+.btn {
+  padding: 8px 26px;
+  display: inline-block;
+  background-color: white;
+  margin-top: 30px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn-img {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: 4px;
+  padding: 0;
+
+}
+
+.btn-span {
+  position: relative;
+  bottom: 6px;
+}
+
+/* -------------- HEADER -------------- */
 .site-header,
 .site-footer {
   background-color: #40596b;
@@ -32,4 +56,31 @@
 .main-nav a:hover {
   color: white;
   transition: 0.4s;
+}
+
+/* -------------- HERO -------------- */
+#home {
+  padding: 140px 0;
+  background-color: #55c0ec;
+}
+
+.hero-description {
+  width: 45%;
+  float: left;
+  text-align: center;
+  margin-right: 130px;
+  position: relative;
+  top: 70px;
+}
+
+.hero-description h1 {
+  font-size: 3.2em;
+  padding-bottom: 20px;
+  font-weight: normal;
+  color: #1e4352;
+}
+
+.slogen {
+  font-size: 1.3em;
+  color: white;
 }
