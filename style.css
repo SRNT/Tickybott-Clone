@@ -3,10 +3,16 @@
   padding: 0;
 }
 
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .container {
   padding: 0 50px;
   max-width: 1200px;
   font-size: 1.25em;
+  margin: auto;
 }
 
 .btn {
