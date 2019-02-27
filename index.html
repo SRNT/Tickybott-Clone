@@ -11,7 +11,7 @@
 
 <body>
 
-  <header class="site-header">
+  <header class="site-header" id="header">
     <div class="container">
       <nav class="main-nav">
         <a href="#home">Home</a>
@@ -110,8 +110,8 @@
 
     <section class="page-about" id="about">
       <div class="container">
-        <h3 class="about-title">What Is <strong>Ticky</strong>Bot</h3>
-        <hr class="about-hr">
+        <h3 class="title">What Is <strong>Ticky</strong>Bot</h3>
+        <hr class="hr">
         <div class="container-flex">
           <div class="description-left">
             <p><strong>Ticky</strong>Bot is a Slack Bot 🤖 that lets you use support tickets on
@@ -138,9 +138,11 @@
     <section class="page-features" id="features">
       <div class="container">
         <h3 class="title">How It Works</h3>
-        <hr class="features-hr">
+        <hr class="hr">
         <div class="features-card">
-          <img class="card-img" src="img/5e294ff6045f826e1b4f452df8897fb8.svg" alt="">
+          <div class="img-card">
+            <img class="card-img" src="img/5e294ff6045f826e1b4f452df8897fb8.svg" alt="">
+          </div>
           <div class="card-description">
             <p>You can add
               <strong>Ticky</strong>Bot to your Slack workplace by scrolling down or
@@ -148,15 +150,19 @@
           </div>
         </div>
         <div class="features-card">
-          <img class="card-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTA4IDUwOCI+DQogIDxjaXJjbGUgc3R5bGU9ImZpbGw6IzU0QzFFQzsiIGN4PSIyNTQiIGN5PSIyNTQiIHI9IjI1NCIvPg0KICA8cGF0aCBzdHlsZT0iZmlsbDojMzI0QTVFOyIgZD0iTTE4NS4yLDE5MS42djEzMy4yYzAsNi40LDUuMiwxMS4yLDExLjIsMTEuMmgxMTEuMmw4MS42LDU2LjhMMzc0LjQsMzM2aDI2LjggYzYuNCwwLDExLjItNS4yLDExLjItMTEuMlYxOTEuNmMwLTYuNC01LjItMTEuMi0xMS4yLTExLjJIMTk2LjRDMTkwLDE4MC40LDE4NS4yLDE4NS4yLDE4NS4yLDE5MS42eiIvPg0KICA8cGF0aCBzdHlsZT0iZmlsbDojRkY3MDU1OyIgZD0iTTM2Ni40LDEyOC44djE1OC40YzAsNy42LTYsMTMuNi0xMy42LDEzLjZIMjIwLjRMMTIzLjIsMzY4bDE3LjYtNjcuNmgtMzJjLTcuNiwwLTEzLjYtNi0xMy42LTEzLjYgdi0xNThjMC03LjYsNi0xMy42LDEzLjYtMTMuNmgyNDRDMzYwLDExNS4yLDM2Ni40LDEyMS4yLDM2Ni40LDEyOC44eiIvPg0KICA8Zz4NCiAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRTZFOUVFOyIgY3g9IjE1My42IiBjeT0iMjA4IiByPSIxOS42Ii8+DQogICAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRTZFOUVFOyIgY3g9IjIzMC44IiBjeT0iMjA4IiByPSIxOS42Ii8+DQogICAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRTZFOUVFOyIgY3g9IjMwNy42IiBjeT0iMjA4IiByPSIxOS42Ii8+DQogIDwvZz4NCjwvc3ZnPg0K"
-            alt="">
+          <div class="img-card">
+            <img class="card-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTA4IDUwOCI+DQogIDxjaXJjbGUgc3R5bGU9ImZpbGw6IzU0QzFFQzsiIGN4PSIyNTQiIGN5PSIyNTQiIHI9IjI1NCIvPg0KICA8cGF0aCBzdHlsZT0iZmlsbDojMzI0QTVFOyIgZD0iTTE4NS4yLDE5MS42djEzMy4yYzAsNi40LDUuMiwxMS4yLDExLjIsMTEuMmgxMTEuMmw4MS42LDU2LjhMMzc0LjQsMzM2aDI2LjggYzYuNCwwLDExLjItNS4yLDExLjItMTEuMlYxOTEuNmMwLTYuNC01LjItMTEuMi0xMS4yLTExLjJIMTk2LjRDMTkwLDE4MC40LDE4NS4yLDE4NS4yLDE4NS4yLDE5MS42eiIvPg0KICA8cGF0aCBzdHlsZT0iZmlsbDojRkY3MDU1OyIgZD0iTTM2Ni40LDEyOC44djE1OC40YzAsNy42LTYsMTMuNi0xMy42LDEzLjZIMjIwLjRMMTIzLjIsMzY4bDE3LjYtNjcuNmgtMzJjLTcuNiwwLTEzLjYtNi0xMy42LTEzLjYgdi0xNThjMC03LjYsNi0xMy42LDEzLjYtMTMuNmgyNDRDMzYwLDExNS4yLDM2Ni40LDEyMS4yLDM2Ni40LDEyOC44eiIvPg0KICA8Zz4NCiAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRTZFOUVFOyIgY3g9IjE1My42IiBjeT0iMjA4IiByPSIxOS42Ii8+DQogICAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRTZFOUVFOyIgY3g9IjIzMC44IiBjeT0iMjA4IiByPSIxOS42Ii8+DQogICAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRTZFOUVFOyIgY3g9IjMwNy42IiBjeT0iMjA4IiByPSIxOS42Ii8+DQogIDwvZz4NCjwvc3ZnPg0K"
+              alt="">
+          </div>
           <div class="card-description">
             <p>Your users can open a ticket by typing
               <code>/ticket</code> and their message into the chat field</p>
           </div>
         </div>
         <div class="features-card">
-          <img class="card-img" src="img/61dc5059d07b210a9e0a7881695a8e03.svg" alt="">
+          <div class="img-card">
+            <img class="card-img" src="img/61dc5059d07b210a9e0a7881695a8e03.svg" alt="">
+          </div>
           <div class="card-description">
             <p>Once you or another admin solved their problems you can type
               <code>/ticket close #id</code> to close the ticket</p>
@@ -190,7 +196,7 @@
     </div>
   </footer>
 
-  <button class="back-to-top"><img src="/img/6c046c0244c5c5d05c3cf973afc6a1a8.svg" alt="">back to top</button>
+  <a class="back-to-top" href="#header"><img src="/img/6c046c0244c5c5d05c3cf973afc6a1a8.svg" alt="back to top"></a>
 
   <script src="script.js"></script>
 </body>
