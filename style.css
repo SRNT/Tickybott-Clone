@@ -16,13 +16,20 @@
 }
 
 .btn {
-  padding: 8px 26px;
+  height: 75px;
+  width: 250px;
   display: inline-block;
   background-color: white;
   margin-top: 30px;
   border: none;
   font-size: 1em;
   cursor: pointer;
+  transition-duration: 0.15s;
+}
+
+.btn:hover {
+  height: 65px;
+  width: 240px;
 }
 
 .btn-img {
@@ -30,8 +37,7 @@
   width: 35px;
   position: relative;
   top: 4px;
-  padding: 0;
-
+  right: 15px;
 }
 
 .btn-span {
@@ -63,13 +69,14 @@
 }
 
 .main-nav {
-  line-height: 3.5em;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main-nav a {
   text-align: center;
-  padding: 10px 16px;
+  padding: 25px 16px;
   font-family: sans-serif;
   color: #ffd05a;
   text-decoration: none;
@@ -87,12 +94,15 @@
 }
 
 .hero-description {
-  width: 45%;
-  float: left;
   text-align: center;
   margin-right: 130px;
-  position: relative;
-  top: 70px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 130px;
 }
 
 .hero-description h1 {
@@ -139,6 +149,7 @@
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: calc(50% - 2rem);
+  padding: 0 20px 0 0;
 }
 
 .description-right {
@@ -157,6 +168,11 @@
 }
 
 /* -------------- FEATURES -------------- */
+.features-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .page-features {
   color: #000000bf;
@@ -164,10 +180,15 @@
   padding: 60px 0;
 }
 
+.page-features h3 {
+  font-size: 2.5em;
+
+}
+
 .features-card {
   width: 350px;
   display: inline-block;
-  margin: 0 17px;
+  margin: 30px 17px;
   text-align: center;
 }
 
@@ -198,17 +219,23 @@
 /* -------------- CTA -------------- */
 
 .container-narrow {
-  width: 500px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* width: 500px; */
+  justify-content: center;
   text-align: center;
   padding: 40px 0;
   color: #000000bf;
 }
 
+.description-full {
+  max-width: 600px;
+  margin: 47px auto 0 auto;
+}
+
 .btn-dark {
   background-color: #40596b;
   color: white;
-  padding-bottom: 12px;
   margin: 60px 0;
 }
 
@@ -223,4 +250,27 @@
 
 .site-footer a {
   color: white;
+}
+
+
+@media all and (max-width: 500px) {
+  .main-nav {
+    flex-flow: column wrap;
+  }
+
+  .main-nav a {
+    border-bottom: 0.5px solid #537085;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-description {
+    margin-bottom: 80px;
+    margin-left: 120px;
+
+  }
 }
