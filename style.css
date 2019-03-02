@@ -32,12 +32,17 @@
   width: 240px;
 }
 
+.btn:hover img {
+  transform: scale(1.2) rotate(20deg);
+}
+
 .btn-img {
   height: 35px;
   width: 35px;
   position: relative;
   top: 4px;
   right: 15px;
+  transition-duration: 0.5s;
 }
 
 .btn-span {
